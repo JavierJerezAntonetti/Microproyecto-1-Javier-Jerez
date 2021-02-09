@@ -10,7 +10,7 @@
 :root {
   --gradientPrimary: linear-gradient(45deg, #003877 0%, #357afc 100%);
   --gradientPrimaryInverse: linear-gradient(45deg, #357afc 0%, #003877 100%);
-  --primary: #258bff;
+  --primary: #003877;
   --dark: rgb(33, 34, 49);
   --light: rgb(255, 255, 255);
   --accent: rgb(217, 4, 41);
@@ -117,4 +117,62 @@ body {
 }
 #retroceder {
     width: 50px;
+}
+
+/* === EXPERIENCE === */
+.section.experience {
+    width: 100%;
+    height: calc(100vh - 80px)
+}
+.section .section-content.section-cols-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 20px;
+    padding: 30px;
+}
+.experience .card-category {
+    padding: 15px;
+    border-radius: 10px;
+    background: rgb(43, 45, 66, 0.4);
+}
+.section.experience h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary);
+    padding: 40px;
+}
+.section.experience p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--dark);
+    font-size: 1.2em;
+}
+.experience .card-category h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    color: var(--dark);
+    padding: 10px;
+}
+.experience .card-category p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--dark);
+}
+.experience .card-category h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em;
+    color: var(--dark);
+    padding: 10px;
+}
+.experience .card-category .imagen {
+    width: 100%;
 }
