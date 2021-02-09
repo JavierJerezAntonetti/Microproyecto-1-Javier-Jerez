@@ -13,8 +13,7 @@
   --primary: #003877;
   --dark: rgb(33, 34, 49);
   --light: rgb(255, 255, 255);
-  --accent: rgb(217, 4, 41);
-  --accent-2: rgb(141, 153, 174);
+  --accent: rgb(226, 226, 226);
   --success: rgb(76, 224, 109);
 }
 
@@ -28,10 +27,9 @@ body {
  * Estilos en común entre varios elementos
 */
 .wrapper {
-  min-width: calc(100vw - 30px);
-  max-width: calc(100vw - 30px);
-  margin-left: auto;
-  margin-right: auto;
+  display:flex;
+  flex-direction: column;
+  height: calc(100vh - 80px)
 }
 
 /* === HEADER + NAVBAR === */
@@ -122,18 +120,18 @@ body {
 /* === EXPERIENCE === */
 .section.experience {
     width: 100%;
-    height: calc(100vh - 80px)
+    height: calc(100vh - 80px);
 }
 .section .section-content.section-cols-3 {
     display: grid;
-    grid-template-columns: repeat(3, 3fr);
-    gap: 20px;
-    padding: 30px;
+    grid-template-columns: repeat(3, 400px);
+    grid-gap: 100px;
+    justify-content: center;
 }
 .experience .card-category {
     padding: 15px;
     border-radius: 10px;
-    background: rgb(43, 45, 66, 0.4);
+    background: var(--accent);
 }
 .section.experience h1 {
     display: flex;
@@ -142,14 +140,15 @@ body {
     font-size: 2em;
     font-weight: bold;
     color: var(--primary);
-    padding: 40px;
+    margin-top: 60px;
 }
 .section.experience p {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     color: var(--dark);
     font-size: 1.2em;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 .experience .card-category h2 {
     display: flex;
@@ -157,7 +156,7 @@ body {
     align-items: center;
     font-weight: 600;
     color: var(--dark);
-    padding: 10px;
+    margin-top: 10px;
 }
 .experience .card-category p {
     display: flex;
@@ -171,8 +170,45 @@ body {
     align-items: center;
     font-size: 1em;
     color: var(--dark);
-    padding: 10px;
 }
 .experience .card-category .imagen {
     width: 100%;
 }
+
+/* === ABOUT ME === */
+.section.about {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: var(--accent);
+}
+.section.about h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary);
+    margin-top: 60px;
+}
+.about .card-category {
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    display: flex;
+    width: 70%;
+    height: 700px;
+    margin: auto;
+}
+.about .card-category .imagen {
+    width: 50%;
+
+}
+.about .card-category .texto {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    text-align: left;
+}
+
