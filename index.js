@@ -62,7 +62,7 @@ let tecnologia = document.getElementById("tecnologia");
 var skills_obj = JSON.parse(skills);
 
 function showpro() {
-    alert(skills_obj.programacion]);
+    alert(skills_obj.programacion);
 }
 
 // ------------ CONTACT ME ------------
