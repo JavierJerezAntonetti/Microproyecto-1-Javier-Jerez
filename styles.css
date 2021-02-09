@@ -217,7 +217,7 @@ body {
 .section.skills {
     width: 100%;
     height: calc(100vh - 80px);
-    background: var(--accent);
+    background: var(--light);
 }
 .section.skills h1 {
     display: flex;
@@ -255,7 +255,7 @@ body {
 .section.contact {
     width: 100%;
     height: calc(100vh - 80px);
-    background: var(--light);
+    background: var(--accent);
 }
 .section.contact h1 {
     display: flex;
@@ -280,7 +280,7 @@ body {
     padding: 20px 500px;
     border-radius: 5px;
     text-align: center;
-    background: var(--accent);
+    background: var(--light);
 }
 .input-with-button input::placeholder {
     font-size: 18px;
@@ -299,7 +299,7 @@ body {
     cursor: pointer;
 }
 .input-with-button .enviar:hover {
-    background: var(--accent);
+    background: var(--light);
     color: var(--dark);
 }
 .footer {
@@ -330,10 +330,10 @@ body {
     border-radius: 5px;
 }
 .footer .instagram:hover {
-    background: var(--accent);
+    background: var(--light);
     color: var(--dark);
 }
 .footer .whatsapp:hover {
-    background: var(--accent);
+    background: var(--light);
     color: var(--dark);
 }

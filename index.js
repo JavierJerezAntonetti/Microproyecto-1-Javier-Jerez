@@ -49,20 +49,25 @@ window.onload = function () {
 }
 
 // ------------ SKILLS ------------
-let skills = {
-    programacion:"60% de Habilidad", 
-    desarrollo:"30% de Habilidad",
-    tecnologia:"75% de Habilidad"
+var skills = {
+    "programacion":"60% de Habilidad", 
+    "desarrollo":"30% de Habilidad",
+    "tecnologia":"75% de Habilidad"
 };
 
-let programacion = document.getElementById("programacion");
-let desarrollo = document.getElementById("desarrollo");
-let tecnologia = document.getElementById("tecnologia");
+function showpro(){
+    alert(skills.programacion);  
+    return true  
+}
 
-var skills_obj = JSON.parse(skills);
+function showdes(){
+    alert(skills.desarrollo);  
+    return true  
+}
 
-function showpro() {
-    alert(skills_obj.programacion);
+function showtec(){
+    alert(skills.tecnologia);  
+    return true  
 }
 
 // ------------ CONTACT ME ------------
