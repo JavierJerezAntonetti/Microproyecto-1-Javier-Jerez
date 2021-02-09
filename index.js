@@ -48,8 +48,24 @@ window.onload = function () {
     renderizarImagen();
 }
 
-
 // ------------ SKILLS ------------
+let skills = {
+    programacion:"60% de Habilidad", 
+    desarrollo:"30% de Habilidad",
+    tecnologia:"75% de Habilidad"
+};
+
+let programacion = document.getElementById("programacion");
+let desarrollo = document.getElementById("desarrollo");
+let tecnologia = document.getElementById("tecnologia");
+
+var skills_obj = JSON.parse(skills);
+
+function showpro() {
+    alert(skills_obj.programacion]);
+}
+
+// ------------ CONTACT ME ------------
 function validate() {
 
     if( document.myForm.name.value == "" ) {
@@ -62,14 +78,13 @@ function validate() {
         document.myForm.msg.focus();
         return false;
     }
-    var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    if (document.myForm.mail.value.match(mailformat)) {
-        alert("SOLICITUD ENVIADA CON ÉXITO!")
+    if( document.myForm.mail.value.includes("@")) {  
+        alert("SOLICITUD ENVIADA CON ÉXITO"); 
         document.myForm.mail.focus();
-        return true;
+        return true;  
     } else {
-        alert("Por favor introduce un correo válido!")
+        alert("Por favor ingresa un correo válido!");  
         document.myForm.mail.focus();
-        return false;
+        return false;  
     }
 }
