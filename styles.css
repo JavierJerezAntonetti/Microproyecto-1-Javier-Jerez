@@ -9,12 +9,10 @@
 /* CSS VARIABLES */
 :root {
   --gradientPrimary: linear-gradient(45deg, #003877 0%, #357afc 100%);
-  --gradientPrimaryInverse: linear-gradient(45deg, #357afc 0%, #003877 100%);
   --primary: #003877;
   --dark: rgb(33, 34, 49);
   --light: rgb(255, 255, 255);
   --accent: rgb(226, 226, 226);
-  --success: rgb(76, 224, 109);
 }
 
 body {
@@ -96,7 +94,7 @@ body {
   border: none;
 }
 .header .menu .navbar li:hover {
-  background: var(--light);
+  background: var(--accent);
   color: var(--dark);
 }
 
@@ -193,7 +191,7 @@ body {
 .about .card-category {
     padding: 30px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.4);
+    background: var(--light);
     display: flex;
     width: 70%;
     height: 700px;
@@ -201,14 +199,143 @@ body {
 }
 .about .card-category .imagen {
     width: 50%;
-
 }
 .about .card-category .texto {
     margin: auto;
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin-left: 0px;
-    text-align: left;
+    padding: 30px;
+    align-items: center;
+    gap: 40px;
+}
+.about .card-category .texto p{
+    font-size: 1.5em;
 }
 
+/* === SKILLS === */
+.section.skills {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: var(--accent);
+}
+.section.skills h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary);
+    margin-top: 60px;
+}
+.skills .card-category {
+    padding: 30px;
+    border-radius: 10px;
+    background: var(--light);
+    display: flex;
+    width: 70%;
+    height: 700px;
+    margin: auto;
+}
+.skills .card-category .imagen {
+    width: 50%;
+}
+.skills .card-category .texto {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    gap: 40px;
+}
+.skills .card-category .texto p{
+    font-size: 1.5em;
+}
+
+/* === CONTACT ME === */
+.section.contact {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: var(--light);
+}
+.section.contact h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary);
+    margin-top: 60px;
+}
+.input-with-button {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 70px;
+}
+.input-with-button input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 20px 500px;
+    border-radius: 5px;
+    text-align: center;
+    background: var(--accent);
+}
+.input-with-button input::placeholder {
+    font-size: 18px;
+    color: var(--dark);
+}
+.input-with-button .enviar {
+    display: block;
+    border: none;
+    background: var(--dark);
+    color: var(--light);
+    padding: 20px 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+.input-with-button .enviar:hover {
+    background: var(--accent);
+    color: var(--dark);
+}
+.footer {
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+}
+.footer li {
+    height: 60px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    font-size: 1em;
+    height: auto;
+    list-style: none;
+    color: var(--dark);
+    margin: auto;
+}
+.footer .instagram {
+    color: var(--light);
+    padding: 20px 40px;
+    background: var(--dark);
+    border-radius: 5px;
+}
+.footer .whatsapp {
+    color: var(--light);
+    padding: 20px 40px;
+    background: var(--dark);
+    border-radius: 5px;
+}
+.footer .instagram:hover {
+    background: var(--accent);
+    color: var(--dark);
+}
+.footer .whatsapp:hover {
+    background: var(--accent);
+    color: var(--dark);
+}

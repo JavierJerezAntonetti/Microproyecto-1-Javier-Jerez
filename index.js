@@ -1,5 +1,5 @@
 
-// ----------- HERO ------------
+// ------------ HERO ------------
 window.onload = function () {
     // Variables
     const IMAGENES = [
@@ -46,4 +46,30 @@ window.onload = function () {
     $botonRetroceder.addEventListener('click', retrocederFoto);
     // Iniciar
     renderizarImagen();
-} 
+}
+
+
+// ------------ SKILLS ------------
+function validate() {
+
+    if( document.myForm.name.value == "" ) {
+        alert( "Por favor introduce tu nombre!" );
+        document.myForm.name.focus();
+        return false;
+    }
+    if( document.myForm.msg.value == "" ) {
+        alert( "Por favor ingresa tu mensaje!" );
+        document.myForm.msg.focus();
+        return false;
+    }
+    var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (document.myForm.mail.value.match(mailformat)) {
+        alert("SOLICITUD ENVIADA CON ÉXITO!")
+        document.myForm.mail.focus();
+        return true;
+    } else {
+        alert("Por favor introduce un correo válido!")
+        document.myForm.mail.focus();
+        return false;
+    }
+}

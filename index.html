@@ -16,10 +16,10 @@
             </div>
 
             <ul class="navbar" id="menuContainer">
-                <li>Experience</li>
-                <li>About Me</li>
-                <li>Skills</li>
-                <li>Contact Me</li>
+                <li><a href="#exp" style="text-decoration: none; color:inherit">Experience</a></li>
+                <li><a href="#ab" style="text-decoration: none; color:inherit">About Me</a></li>
+                <li><a href="#ski" style="text-decoration: none; color:inherit">Skills</a></li>
+                <li><a href="#con" style="text-decoration: none; color:inherit">Contact Me</a></li>
             </ul>
         </nav>
         <!-- HERO -->
@@ -31,7 +31,8 @@
     </section>
 
     <!-- EXPERIENCE -->
-    <section class="section experience" id="experience">
+    <section class="section experience" id="experience" style="position:relative;">
+        <a name="exp" style="position:absolute; top:-80px;"></a>
         <div class="wrapper">
             <div class="section-title">
                 <h1>EXPERIENCE</h1>
@@ -58,9 +59,11 @@
                 </div>
             </div>
         </div>
+    </section>
 
     <!-- ABOUT ME -->
-    <section class="section about" id="about">
+    <section class="section about" id="about" style="position:relative;">
+        <a name="ab" style="position:absolute; top:-80px;"></a>
         <div class="wrapper">
             <div class="section-title">
                 <h1>ABOUT ME</h1>
@@ -72,14 +75,52 @@
                     <p>Estudio Ingeniería de Sistemas, tengo 20 años y mis metas a corto plazo son poder graduarme y aprender todo lo que pueda, aprovechando al máximo las oportunidades que me ofrece la UNIMET. Mi meta mayor es ser dueño de una empresa millonaria. Practico Basket y Boxeo.</p>
                 </div>
             </div>
-            <div class="input-with-button">
-                <input type="text" placeholder="Search Posts" />
-                <button type="button">Search</button>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills" style="position:relative;">
+        <a name="ski" style="position:absolute; top:-80px;"></a>
+        <div class="wrapper">
+            <div class="section-title">
+                <h1>SKILLS</h1>
+            </div>
+            <div class="card-category">
+                <img class="imagen" src="./images/perfil.jpg">
+                <div class="texto">
+                    <h2>JAVIER JEREZ</h2>
+                    <p>Estudio Ingeniería de Sistemas, tengo 20 años y mis metas a corto plazo son poder graduarme y aprender todo lo que pueda, aprovechando al máximo las oportunidades que me ofrece la UNIMET. Mi meta mayor es ser dueño de una empresa millonaria. Practico Basket y Boxeo.</p>
+                </div>
             </div>
         </div>
-
-
     </section>
+
+    <!-- CONTACT ME + FOOTER -->
+    <section class="section contact" id="contact" style="position:relative;">
+        <a name="con" style="position:absolute; top:-80px;"></a>
+        <div class="wrapper">
+            <div class="section-title">
+                <h1>CONTACT ME</h1>
+            </div>
+            <form name = "myForm" onsubmit = "return(validate());">
+                <div class="input-with-button">
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    <input type="text" name="mail" placeholder="Correo" required>
+                    <input type="text" name="msg" placeholder="Mensaje" required>
+                    <input class="enviar" type="submit" value="Enviar"></input>
+                    
+                </div>
+            </form>
+            <ul class="footer">
+                <li class="instagram"><a href="https://www.instagram.com/ja_jrz" target="_blank" style="text-decoration: none; color:inherit">Instagram</a></li>
+                <li class="whatsapp"><a href="https://wa.me/+584142046640" target="_blank" style="text-decoration: none; color:inherit">Whatsapp</a></li>
+                <li class="textofooter">javier.jerez@correo.unimet.edu.ve</li>
+                <li class="textofooter">04142046640</li>
+            </ul>
+        </div>
+    </section>
+
+
     <script src="./index.js"></script>
   </body>
 </html>
